@@ -45,7 +45,7 @@ const FooterColLogo = styled.div`
   min-width: 180px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   @media (max-width: 700px) {
     width: 100%;
     min-width: unset;
