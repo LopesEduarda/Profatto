@@ -193,6 +193,7 @@ const StoreAddress = styled.div`
   width: 105%;
   @media (max-width: 700px) {
     margin-bottom: 0.8rem;
+    width: 95%;
   }
 `;
 
