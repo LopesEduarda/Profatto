@@ -56,7 +56,7 @@ const FooterColLogo = styled.div`
 
 const FooterColContent = styled.div`
   flex: 1 1 200px;
-  min-width: 180px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -171,61 +171,128 @@ const Copyright = styled.div`
   }
 `;
 
+const StoreInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @media (max-width: 700px) {
+    gap: 0.8rem;
+  }
+`;
+
+const StoreName = styled.div`
+  font-weight: bold;
+  margin-bottom: -10px;
+  @media (max-width: 700px) {
+    margin-bottom: 0.6rem;
+  }
+`;
+
+const StoreAddress = styled.div`
+  margin-bottom: 1rem;
+  width: 105%;
+  @media (max-width: 700px) {
+    margin-bottom: 0.8rem;
+  }
+`;
+
+const StoreHours = styled.div`
+  margin-bottom: 1rem;
+  @media (max-width: 700px) {
+    margin-bottom: 0.8rem;
+  }
+`;
+
+const StoreHoursLabel = styled.div`
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  @media (max-width: 700px) {
+    margin-bottom: 0.4rem;
+  }
+`;
+
+const StorePhone = styled.div`
+  margin-bottom: 1rem;
+  @media (max-width: 700px) {
+    margin-bottom: 0.8rem;
+  }
+`;
+
+const StorePhoneLabel = styled.div`
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  @media (max-width: 700px) {
+    margin-bottom: 0.4rem;
+  }
+`;
+
 export default function Footer() {
-    return (
-        <FooterSection>
-            <FooterWrapper>
-                <FooterColLogo>
-                    <FooterLogo src={logo} alt="ProFatto logo" />
-                    <Socials>
-                        <SocialIcon href="#" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24" fill="none"><path d="M15.5 8.5H13.5V7.5C13.5 7.22386 13.7239 7 14 7H15.5V4.5H14C12.6193 4.5 11.5 5.61929 11.5 7V8.5H10V11H11.5V19.5H13.5V11H15L15.5 8.5Z" fill="currentColor" /></svg>
-                        </SocialIcon>
-                        <SocialIcon href="#" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" /><rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" strokeWidth="2" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" /></svg>
-                        </SocialIcon>
-                        <SocialIcon href="#" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" strokeWidth="2" /><path d="M8 11V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="8" cy="8" r="1" fill="currentColor" /><path d="M12 16V13C12 12.4477 12.4477 12 13 12H15C15.5523 12 16 12.4477 16 13V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
-                        </SocialIcon>
-                        <SocialIcon href="#" aria-label="YouTube">
-                            <svg viewBox="0 0 18 14" fill="none"><rect x="1" y="1" width="16" height="12" rx="5" stroke="currentColor" strokeWidth="2" /><path d="M7 5L12 7L7 9V5Z" fill="currentColor" /></svg>
-                        </SocialIcon>
-                    </Socials>
-                    <Copyright>
-                        Copyright © {new Date().getFullYear()} ProFatto
-                    </Copyright>
-                </FooterColLogo>
-                <FooterColContent>
-                    <FooterTitle>MAPA DO SITE</FooterTitle>
-                    <FooterList>
-                        <FooterListItem><a href="#">HOME</a></FooterListItem>
-                        <FooterListItem><a href="#">SOBRE NÓS</a></FooterListItem>
-                        <FooterListItem><a href="#">TENDÊNCIAS</a></FooterListItem>
-                        <FooterListItem><a href="#">PROJETOS QUE INSPIRAM</a></FooterListItem>
-                        <FooterListItem><a href="#">ESPERIENZAFATTO</a></FooterListItem>
-                        <FooterListItem><a href="#">MARCAS E PRODUTOS</a></FooterListItem>
-                        <FooterListItem><a href="#">CONTATO</a></FooterListItem>
-                    </FooterList>
-                </FooterColContent>
-                <FooterColContent>
-                    <FooterTitle>LOJA 01</FooterTitle>
-                    <div style={{ fontWeight: 'bold', marginBottom: '0.5rem' }}>ProFatto Florianópolis - SC</div>
-                    <div style={{ marginBottom: '0.5rem' }}>R. Antônio Carlos Ferreira, 219 - Agronômica Florianópolis/SC - 88025-211</div>
-                    <div style={{ fontWeight: 'bold', marginBottom: '0.3rem' }}>Horário de atendimento:</div>
-                    <div style={{ marginBottom: '0.5rem' }}>Seg a Sex 09h às 18h | Sábado 09h às 13h</div>
-                    <div style={{ fontWeight: 'bold', marginBottom: '0.3rem' }}>Telefone:</div>
-                    <div>(48) 3113-2600</div>
-                </FooterColContent>
-                <FooterColContent>
-                    <FooterTitle>LOJA 02</FooterTitle>
-                    <div style={{ fontWeight: 'bold', marginBottom: '0.5rem' }}>ProFatto São José - SC</div>
-                    <div style={{ marginBottom: '0.5rem' }}>R. Koesa, 247 - Kobrasol, São José/SC, 88102-310</div>
-                    <div style={{ fontWeight: 'bold', marginBottom: '0.3rem' }}>Horário de atendimento:</div>
-                    <div style={{ marginBottom: '0.5rem' }}>Seg a Sex 09h às 18h | Sábado 09h às 13h</div>
-                    <div style={{ fontWeight: 'bold', marginBottom: '0.3rem' }}>Telefone:</div>
-                    <div>(48) 3113-2600</div>
-                </FooterColContent>
-            </FooterWrapper>
-        </FooterSection>
-    );
+  return (
+    <FooterSection>
+      <FooterWrapper>
+        <FooterColLogo>
+          <FooterLogo src={logo} alt="ProFatto logo" />
+          <Socials>
+            <SocialIcon href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M15.5 8.5H13.5V7.5C13.5 7.22386 13.7239 7 14 7H15.5V4.5H14C12.6193 4.5 11.5 5.61929 11.5 7V8.5H10V11H11.5V19.5H13.5V11H15L15.5 8.5Z" fill="currentColor" /></svg>
+            </SocialIcon>
+            <SocialIcon href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" /><rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" strokeWidth="2" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" /></svg>
+            </SocialIcon>
+            <SocialIcon href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" strokeWidth="2" /><path d="M8 11V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="8" cy="8" r="1" fill="currentColor" /><path d="M12 16V13C12 12.4477 12.4477 12 13 12H15C15.5523 12 16 12.4477 16 13V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+            </SocialIcon>
+            <SocialIcon href="#" aria-label="YouTube">
+              <svg viewBox="0 0 18 14" fill="none"><rect x="1" y="1" width="16" height="12" rx="5" stroke="currentColor" strokeWidth="2" /><path d="M7 5L12 7L7 9V5Z" fill="currentColor" /></svg>
+            </SocialIcon>
+          </Socials>
+          <Copyright>
+            Copyright © {new Date().getFullYear()} ProFatto
+          </Copyright>
+        </FooterColLogo>
+        <FooterColContent>
+          <FooterTitle>MAPA DO SITE</FooterTitle>
+          <FooterList>
+            <FooterListItem><a href="#">HOME</a></FooterListItem>
+            <FooterListItem><a href="#">SOBRE NÓS</a></FooterListItem>
+            <FooterListItem><a href="#">TENDÊNCIAS</a></FooterListItem>
+            <FooterListItem><a href="#">PROJETOS QUE INSPIRAM</a></FooterListItem>
+            <FooterListItem><a href="#">ESPERIENZAFATTO</a></FooterListItem>
+            <FooterListItem><a href="#">MARCAS E PRODUTOS</a></FooterListItem>
+            <FooterListItem><a href="#">CONTATO</a></FooterListItem>
+          </FooterList>
+        </FooterColContent>
+        <FooterColContent>
+          <FooterTitle>LOJA 01</FooterTitle>
+          <StoreInfo>
+            <StoreName>ProFatto Florianópolis - SC</StoreName>
+            <StoreAddress>R. Antônio Carlos Ferreira, 219 - Agronômica Florianópolis/SC - 88025-211</StoreAddress>
+            <StoreHours>
+              <StoreHoursLabel>Horário de atendimento:</StoreHoursLabel>
+              Seg a Sex 09h às 18h | Sábado 09h às 13h
+            </StoreHours>
+            <StorePhone>
+              <StorePhoneLabel>Telefone:</StorePhoneLabel>
+              (48) 3113-2600
+            </StorePhone>
+          </StoreInfo>
+        </FooterColContent>
+        <FooterColContent>
+          <FooterTitle>LOJA 02</FooterTitle>
+          <StoreInfo>
+            <StoreName>ProFatto São José - SC</StoreName>
+            <StoreAddress>R. Koesa, 247 - Kobrasol, São José/SC, 88102-310</StoreAddress>
+            <StoreHours>
+              <StoreHoursLabel>Horário de atendimento:</StoreHoursLabel>
+              Seg a Sex 09h às 18h | Sábado 09h às 13h
+            </StoreHours>
+            <StorePhone>
+              <StorePhoneLabel>Telefone:</StorePhoneLabel>
+              (48) 3113-2600
+            </StorePhone>
+          </StoreInfo>
+        </FooterColContent>
+      </FooterWrapper>
+    </FooterSection>
+  );
 }
