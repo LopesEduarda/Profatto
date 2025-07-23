@@ -19,7 +19,6 @@ O **ProFatto** é um site institucional moderno e responsivo desenvolvido para u
 
 - **React 19.1.0** - Biblioteca JavaScript para construção de interfaces
 - **Styled Components 6.1.19** - CSS-in-JS para estilização componentizada
-- **React Scripts 5.0.1** - Scripts de build e desenvolvimento
 
 ## 📱 Funcionalidades Principais
 
