@@ -18,14 +18,13 @@ O **ProFatto** é um site institucional moderno e responsivo desenvolvido para u
 - **React 19.1.0** - Biblioteca JavaScript para construção de interfaces
 - **Styled Components 6.1.19** - CSS-in-JS para estilização componentizada
 - **React Scripts 5.0.1** - Scripts de build e desenvolvimento
-- **Workbox** - Service Workers para PWA (Progressive Web App)
 
 ## 📱 Funcionalidades Principais
 
 ### 🎨 Design System
 - **Paleta de Cores**: Verde oliva (#8B941F) como cor primária
 - **Tipografia**: Fonte Anek Telugu para uma aparência moderna
-- **Layout Responsivo**: Adaptação perfeita para desktop, tablet e mobile
+- **Layout Responsivo**: Adaptação perfeita para desktop e mobile
 
 ### 🧩 Componentes Principais
 
@@ -66,36 +65,21 @@ O **ProFatto** é um site institucional moderno e responsivo desenvolvido para u
 ## 🖼️ Screenshots do Projeto
 
 ### Desktop View
-<!--
-[INSERIR SCREENSHOT DESKTOP AQUI]
-- Tela principal com header, hero section e navegação
-- Layout completo mostrando todos os componentes
--->
 
-### Tablet View
-<!--
-[INSERIR SCREENSHOT TABLET AQUI]
-- Adaptação responsiva para tablets
-- Menu e componentes otimizados
--->
+<img width="1880" height="931" alt="image" src="https://github.com/user-attachments/assets/9f96c43d-6aa2-4284-8387-5f61a197f2c5" />
+
+<img width="1865" height="927" alt="image" src="https://github.com/user-attachments/assets/9913feda-0e7f-40f5-ae57-30a579d27e34" />
+
+<img width="1884" height="389" alt="image" src="https://github.com/user-attachments/assets/a4c704f7-4be1-4a8c-8898-b1e776ce787a" />
+
 
 ### Mobile View
-<!--
-[INSERIR SCREENSHOT MOBILE AQUI]
-- Layout mobile otimizado
-- Cards do "How It Works" com espaçamento reduzido
-- Newsletter centralizado
--->
 
-### Componentes Específicos
-<!--
-[INSERIR SCREENSHOTS DOS COMPONENTES AQUI]
-- Header com menu mobile
-- Hero section com carrossel
-- Cards do processo de trabalho
-- Formulário de newsletter
-- Footer completo
--->
+<img width="951" height="940" alt="image" src="https://github.com/user-attachments/assets/95e9a85d-c6a0-4d16-9e71-363bc330ad5b" />
+
+<img width="726" height="934" alt="image" src="https://github.com/user-attachments/assets/5b33f3f2-3c78-4164-adcc-3b585a6d56a8" />
+
+
 
 ## 🛠️ Instalação e Configuração
 
@@ -107,7 +91,7 @@ O **ProFatto** é um site institucional moderno e responsivo desenvolvido para u
 
 1. **Clone o repositório**
 ```bash
-git clone [URL_DO_REPOSITORIO]
+git clone git@github.com:LopesEduarda/Profatto.git
 cd profatto
 ```
 
@@ -129,9 +113,6 @@ http://localhost:3000
 ### Scripts Disponíveis
 
 - `npm start` - Inicia o servidor de desenvolvimento
-- `npm run build` - Cria build de produção
-- `npm test` - Executa os testes
-- `npm run eject` - Ejecta a configuração do Create React App
 
 ## 📁 Estrutura do Projeto
 
